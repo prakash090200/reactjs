@@ -14,6 +14,6 @@ export default function CompB() {
             <h6 style={{color:appcolor}}>  This is green color yes</h6>
             -------------------------------
              <CompC/>
-        </div>
+        </div> 
     )
 }
