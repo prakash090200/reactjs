@@ -12,7 +12,7 @@ function App() {
   const [col,setCol]=useState("green");
 
   return (
-    <div className="App">
+    <div className="App">  
     <fname.Provider value={"Prakash"}>
     <lname.Provider value={"Kumar"}>
     <colgroup.Provider value={{appcolor:col}}>  
