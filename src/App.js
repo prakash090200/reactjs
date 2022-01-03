@@ -1,25 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import React,{createContext,useState} from 'react'
+import CompA from './Components/CompA'
 
+const fname=createContext();
+const lname=createContext();
+const colgroup=createContext();
 function App() {
+
+  const [col,setCol]=useState("green");
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <fname.Provider value={"Prakash"}>
+    <lname.Provider value={"Kumar"}>
+    <colgroup.Provider value={{appcolor:col}}>
+
+     <CompA/>
+
+     </colgroup.Provider>
+     </lname.Provider>
+    </fname.Provider>
     </div>
   );
 }
-
+export {fname,lname,colgroup};
 export default App;
+
