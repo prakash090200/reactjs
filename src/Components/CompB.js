@@ -6,7 +6,7 @@ import {fname,lname,colgroup} from '../App'
 export default function CompB() {
     let firstname=useContext(fname);
     let lastname=useContext(lname);
-    let {appcolor}=useContext(colgroup);
+    let {appcolor}=useContext(colgroup); 
 
     return (
         <div>
