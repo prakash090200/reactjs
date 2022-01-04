@@ -5,7 +5,7 @@ export default function CompA() {
     return (
         
         <div>
-            <CompB/>  
+            <CompB/>    
         </div>
     )
 }
