@@ -16,7 +16,7 @@ function App() {
     <fname.Provider value={"Prakash"}>
     <lname.Provider value={"Kumar"}>
     <colgroup.Provider value={{appcolor:col}}>   
-      
+         
      <CompA/>
 
      </colgroup.Provider>
